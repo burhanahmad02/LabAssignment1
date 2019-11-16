@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>**Welcome Admin**</title>
+        <link rel="stylesheet" type="text/css" href="styletech.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}    
+#logout
+{
+    background-color: black;
+    border-color: black;
+    margin-right: 220px;
+    color: white;
+    margin-left: 200px;
+}
+.loginstatus 
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    font-size: 12px;
+    align-items: center;
+    padding:8px;
+    font-family: sans-serif;
+
+}
+.loginstatus p
+{
+    color: white;
+    margin-left: 200px;
+}
+.status1
+{
+    background-color: blue;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content:left;
+    align-items:center;
+    padding: 10;
+    font-size: 12px;
+}
+.status1 p
+{
+    color: white;
+    margin-left: 200px;
+}
+.status1 img
+{
+    margin-left:200px;
+    padding:8px;
+}
+#nocall
+{
+    color:black;
+    margin-left:220px;
+    text-shadow: -1px -1px white;
+    font-family: sans-serif;
+    transform:scaleY(1.50);
+}
+.mainform
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.leftinfo
+{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:flex-start;
+    margin-left:215px;
+}
+.leftinfo input[type="button"]
+{
+    width: 150px;    
+}
+#status
+{
+    font-family: sans-serif;
+    font-size:13px;
+}
+#dnextnumbers
+{
+    bottom:5px;
+    background-color: rgb(178, 240, 178);
+    border-right-color: green;
+    border-top-color: green;
+    border-left-color: green;
+    border-bottom-color: green;
+    height: 35px;
+    font-size: 10px;
+    text-align:center;
+    color: solid black;
+    font-weight: bold;
+}
+.material-icons
+{
+    position:relative;
+    width:18px;
+    border-radius: 50%;
+    bottom: 25px;
+    color:white;
+    background-color: royalblue;
+    font-size:15px;
+    left:3px;
+}
+.leftinfo input[type="checkbox"]
+{
+    height:20px;
+    width:20px;
+}
+#preview
+{
+    font-size: 13px;
+    left:20px;
+    margin-left: 30px;
+    margin-top: -18px;
+    background-color:rgb(124, 228, 124);
+
+}
+#idrecord
+{
+    text-align: center;
+    font-size:13px;
+}
+#radiobutton
+{
+    align-self: center;
+    
+}
+#webform
+{
+    height: 30px;
+    width: 155px;
+    font-size: 13px;
+    border-radius: 1px;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+    border-right-color: dodgerblue;
+    font-weight: bold;
+    padding: 7px;
+}
+#webform2
+{
+    height:30px;
+    width: 155px;
+    font-size: 13px;
+    border-radius: 1px;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+    border-right-color: dodgerblue;
+    font-weight: bold;
+    padding: 7px;
+    margin-top: 3px;
+}
+#parkbutton
+{
+    height: 30px;
+    width: 155px;
+    font-size: 13px;
+    border-radius: 1px;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+    border-right-color: dodgerblue;
+    font-weight: bold;
+    padding: 7px;
+}
+#transferbutton
+{
+    height: 30px;
+    width: 155px;
+    font-size: 13px;
+    border-radius: 1px;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+    border-right-color: dodgerblue;
+    font-weight: bold;
+    padding: 7px;
+    margin-top:3px;
+}
+#hangupbutton
+{
+    background-color: pink;
+    border-left-color: palevioletred;
+    border-right-color: palevioletred;
+    border-block-start-color: palevioletred;
+    border-block-end-color: palevioletred;
+    height: 30px;
+    width: 155px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px;
+}
+#sendbutton
+{
+    text-align: justify;
+    height:22px;
+    width: 90px;
+    background-color: rgb(235, 176, 235);
+    font-size: 12px;
+    font-weight: bold;
+    padding:4px;
+}
+#dtmf
+{
+    height: 25px;
+    width :55px;
+    position:absolute;
+    bottom: 166px;
+    margin-left:92px;
+    border: 1px solid gray; 
+}
+.rightinfo
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:space-around;
+    font-family: sans-serif;
+    font-size:14px;
+    margin-left:50px;
+    margin-top: 70px;
+}
+.timeinfo
+{
+     border:none;
+     background-color:none;    
+}
+.ti
+{
+    text-align: justify;
+    margin-top: px;
+    position: relative;
+}
+.speaker1
+{
+    margin-left:550px;
+    height:30px;
+    width:45px;
+}
+#vup
+{
+    color:darkgray;
+    background-color:whitesmoke;
+    position: absolute;
+    left:1090px;    
+    bottom:230px;
+}
+.speaker2
+{
+    margin-left:652px;
+    height:30px;
+    width:45px;
+}
+#vdown
+{
+    color:darkgray;
+    background-color:whitesmoke;
+    position: absolute;
+    left:1090px;    
+    bottom:195px;
+}
+form
+{
+ margin-top: 80px;
+}
+#agentview
+{
+    color: rgb(255, 208, 0);
+    margin-left:515px;
+    font-size: 12px;
+}
+.bottomside
+{
+    margin-left:215px;
+    margin-top:35px;
+    font-family: "Arial", Times, serif;
+    font-size:12px;
+    font-weight: bold;
+}
+#bot2
+{
+    color: rgb(255, 208, 0);
+}
+   </style>
+    </head>
+    <body>
+        <div class="loginstatus">
+            <p>Logged  in  as  User:  2002  on  Phone:  SIP/2002  to  campaign: VBROAD <div > <a href="task.html"><button id="logout" type="button">LOGOUT</button></a> </div> 
+        </div>
+        <div class="status1">
+            <img src="logocall.png" alt="" width="100" height="50">
+            <p >2019-09-18-01:32:23 session ID: 8600051<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Calls in Queue: 0 </p>
+            <p id="nocall"> NO LIVE CALL</p>
+        </div>
+        <div class = "mainform">
+            <div class="leftinfo">
+                <br><label id="status">STATUS:</label><br>
+                <input type="button" value="DIAL NEXT NUMBER" id="dnextnumbers" >
+                <i class="material-icons" >phone_in_talk</i>
+                <input type="checkbox"> 
+                <label id="preview">LEAD PREVIEW</label>
+                <label style="font-size: 13px; text-align: center;">RECORDING FILE:</label ><br>
+                <label id="idrecord">RECORD ID:</label>
+                <input type=radio id="radiobutton" style="width:30px ; height:30px ;"><br>
+                <input type="button" value="WEB FORM" id="webform">
+                <input type="button" value="WEB FORM 2" id="webform2"><br>
+                <input type="button" value="PARK CALL" id="parkbutton">
+                <input type="button" value="TRANSFER/CONF" id="transferbutton"><br>
+                <input type="button" value="HANGUP CUSTOMER" id="hangupbutton"><br>
+                <input type="button" value="SEND DTMF" id="sendbutton">
+                <input type="text" id="dtmf"><br>
+            </div>
+            <div class="rightinfo"><br>
+                <label class="ti">Customer Time:</label>
+                <input type="text" class="timeinfo">
+                <label class="ti">Channel:</label>
+                <input type="text" class="timeinfo">
+                <label class="ti">seconds:</label>
+                <input type="text" class="timeinfo"><br>
+            <form method="POST" action="actioncreate.php">
+                <h3 style="text-align: center; margin-left:-280px; margin-top:-75px;">Customer Information:</h3><br>
+                <label id="custtitle">Title:</label>
+                <input type="text" name="title" style="margin-left:20px; height:25px; width:55px;">
+                <label id="cfirst" style="margin-left:3px;">First:</label>
+                <input type="text" name="custfirst" style=" height:25px; width:182px;">
+                <label id="cmi" style="margin-left:2px;">MI:</label>
+                <input type="text" name="custmi" style=" height:25px; width:36px;">
+                <label id="clast" style="margin-left:2px;">Last:</label>
+                <input type="text" name="custlast" style=" height:25px; width:182px;"><br>
+                <strong><label style="font-size:16px; margin-left:-28px; ">Address1:</label></strong>
+                <input type="text" name="add1" style=" margin-top:6px; height:25px; width:670px;"><br>
+                <label id="custadd2" style=" margin-left:-13px;">Address2:</label>
+                <input type="text" name="add2" style=" margin-top: 6px; height:25px; width:205px;">
+                <label id="custadd3" style="margin-left: 22px;">Address3:</label>
+                <input type="text" name="add3" style=" margin-top: 3px; height:25px; width:344px;"><br>
+                <label id="city" >City:</label>
+                <input type="text" name="custcity" style=" margin-left: 22px;margin-top: 3px; height:25px; width:205px;">
+                <label id="state" style="margin-left:48px">State:</label>
+                <input type="text" name="custstate" style=" margin-left: 2px;margin-top: 3px; height:25px; width:46px;">
+                <label id="postcode" style="margin-left: 52px;">PostCode:</label>
+                <input type="text" name="custpostcode" style=" margin-top: 3px; height:25px; width:184px;"><br>
+                <label id="province" style="margin-left: -16px;">Province:</label>
+                <input type="text" name="custprovince" style=" margin-left: 8px;margin-top: 6px; height:25px; width:205px;">
+                <label id="vendor" style="margin-left:18px">Vendor ID:</label>
+                <input type="text" name="custvendor" style=" margin-left: 2px;margin-top: 3px; height:25px; width:120px;">
+                <label id="gender" style="margin-left:-6px;">Gender:</label>
+                <select name="custgender" style="margin-left:-2px; width:170px; background-color: whitesmoke;">
+                    <option value="Undefined"> U - Undefined</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select><br>
+                <label id="phone" style="margin-left: -3px;">Phone:</label>
+                <input type="text" name="custphone" style=" border:none; margin-top:6px; background-color:none; margin-left:10px;height:35px; width:205px;">
+                <label id="dialcode" style="margin-left:18px;">Dial Code:</label>
+                <input type="text" name="custdial" style=" margin-left: 2px;margin-top:3px; height:25px; width:46px;">
+                <label id="alternative" style="margin-left: 50px;">Alt. Phone: </label>
+                <input type="text" name="altph" style="margin-left:-1px; margin-top:3px; height:25px; width:184px;"><br>
+                <label id="show" style="margin-left:4px;">Show:</label>
+                <input type="text" name="custshow" style=" margin-left: 8px;margin-top: 3px; height:25px; width:205px;">
+                <label id="email" style="margin-left:46px;">Email:</label>
+                <input type="text" name="custemail" style="margin-left:1px; margin-top: 3px; height:25px; width:340px;"><br>
+                <label id="comments" style="margin-left:-20px; ">Comments:</label>
+                <textarea cols="50" rows="2" name="custcomments" style=" margin-top:6px; height:45px; width:486px;"></textarea><br>
+                <input type="submit" name="action" value="submit" style="margin-left:55px;">
+                <button class="speaker1"></button>
+                <i class="material-icons" id="vup">volume_up</i>
+                <button class="speaker2" ></button>
+                <i class="material-icons" id="vdown">volume_down</i>
+                <div> <a href="fetch.html"><button type="button" >Fetch</button></a> </div>
+                <div> <a href="delete.html"><button type="button">Delete</button></a> </div>
+                <div> <a href="update.html"><button type="button">Update</button></a> </div>
+            </form>
+            <p id="agentview">Agents View +</p><br>
+            </div>
+        </div>
+        <div class="bottomside">
+            <P id="bot1">VERSION:&nbsp;2.14585C &ensp; BUILD: 190730-0925&ensp; Server:184.95.52.187 </P>
+            <P id="bot2">Show conference call channel information</P>
+        </div>
+    </body>
+</html>
